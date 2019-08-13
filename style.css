@@ -1,0 +1,49 @@
+@font-face {
+  src: url(RetroGaming.ttf);
+  font-family: retro;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: retro;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+#gameOver {
+  font-size: 2rem;
+}
+
+#startBtn,
+#confirmBtn,
+#guessConfirmation,
+#playAgainBtn,
+#gameOverBtn {
+  font-family: retro;
+  background-color: aquamarine;
+}
+
+#startBtn:hover,
+#confirmBtn:hover,
+#playAgainBtn:hover,
+#gameOverBtn:hover {
+  background-color: aqua;
+}
+
+/* #startGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */

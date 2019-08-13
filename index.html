@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" async defer></script>
+  </head>
+  <body>
+    <section id="startGame">
+      <h1>Guess the number!</h1>
+      <button id="startBtn">Play Game</button>
+    </section>
+
+    <section id="getScope" class="hide">
+      <h2>Podaj zakres</h2>
+      <form action="">
+        <label for="min">min</label>
+        <input id="min" type="text" />
+        <label for="max">max</label>
+        <input id="max" type="text" />
+        <button id="confirmBtn">potwierdź</button>
+      </form>
+    </section>
+
+    <section id="game" class="hide">
+      <p id="scopeHint"></p>
+      <form action="">
+        <label for="guess">Zgadnij liczbę</label>
+        <input id="guess" type="text" />
+        <button id="guessConfirmation">OK</button>
+      </form>
+      <p id="hint"></p>
+      <pre id="chosenNumbers"></pre>
+    </section>
+    <section id="result" class="hide">
+      <h2 id="showResult"></h2>
+      <p>Czy chcesz zagrać jeszcze raz?</p>
+      <button id="playAgainBtn">Tak</button>
+      <button id="gameOverBtn">Nie</button>
+    </section>
+    <section id="gameOver" class="hide">
+      Game Over
+    </section>
+  </body>
+</html>
